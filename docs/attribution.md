@@ -1,0 +1,1 @@
+- Logo/favicon `sun-2-svgrepo-com.svg`: [Sun 2 SVG Vector](https://www.svgrepo.com/svg/529971/sun-2), [CC Attribution License](https://www.svgrepo.com/page/licensing/#CC%20Attribution), no changes made
