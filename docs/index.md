@@ -1,7 +1,7 @@
 # Home
 
-This is a site where I post things I've learned
+I post things I'm learning here!
 
 ## Recent additions
-- [Dual-booting Windows and Ubuntu](guides/dualboot-windows-ubuntu.md)
-- [Setting up my Windows environment](guides/windows.md)
+- [Dual-booting Windows and Ubuntu](OS-config/dualboot-windows-ubuntu.md)
+- [Setting up my Windows environment](OS-config/windows.md)

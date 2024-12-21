@@ -14,102 +14,102 @@ How I like to setup my Windows environment
 
     2. Your Wi-Fi adapter may not work correctly after a clean install, so make sure you're connected to the Internet via Ethernet or have your Wi-Fi adapter drivers ready
 
-1. install Windows 11 using the [media creation tool](https://www.microsoft.com/en-us/software-download/windows11)
-    - format and then delete all partitions on the drive where you want Windows installed
-    - then install on "unallocated space" 
-2. windows Update -> advanced options -> disable: get updates from other PCs
-3. run Windows Update several times until none left
-4. do the same but with the Microsoft Store
-5. uninstall bloat apps. See list of all from the start menu
-6. correct timezone and sync with Windows time server
-7. install [NVIDIA app](https://www.nvidia.com/en-us/software/nvidia-app/) and latest driver
+1. Install Windows 11 using the [media creation tool](https://www.microsoft.com/en-us/software-download/windows11)
+    - Format and then delete all partitions on the drive where you want Windows installed
+    - Then install on "unallocated space" 
+2. Windows Update :material-arrow-right: advanced options :material-arrow-right: disable: get updates from other PCs
+3. Run Windows Update several times until none left
+4. Do the same but with the Microsoft Store
+5. Uninstall bloat apps. See list of all from the start menu
+6. Correct timezone and sync with Windows time server
+7. Install [NVIDIA app](https://www.nvidia.com/en-us/software/nvidia-app/) and latest driver
     - disable: automatically optimize
     - custom installation
         - disable: install audio driver
         - enable: perform clean install
-8. reboot
-9. check for system updates until none left, then on Microsoft Store
-10. windows update -> advanced options -> optional updates
+8. Reboot
+9. Check for system updates until none left, then on Microsoft Store
+10. windows update :material-arrow-right: advanced options :material-arrow-right: optional updates
     - if available, install:
         - Intel - Net
         - Intel - Bluetooth
         - C-MEDIA
-11. reboot
+11. Reboot
 12. [test internet speed](https://www.speedtest.net/)
 
 ## Display settings
-1. open NVIDIA control panel, enable g-sync if available
-2. for 4K monitor
+1. Open NVIDIA control panel, enable g-sync if available
+2. For 4K monitor
     - resolution: 3840x2160
     - refresh rate: 120 Hz
     - scaling: 150%
 
 ## Windows settings
 ### Power options
-1. go to `Control Panel\Hardware and Sound\Power Options`
-2. show additional plans -> high performance: enabled
-3. change plan settings:
+1. Go to `Control Panel\Hardware and Sound\Power Options`
+2. Show additional plans :material-arrow-right: high performance: enabled
+3. Change plan settings:
     - turn off the display: 10 minutes
     - put the computer to sleep: never
-    - change advanced plan settings -> USB settings
+    - change advanced plan settings :material-arrow-right: USB settings
         - disable: USB selective suspend
-4. "Choose what the power buttons do" -> "Change settings that are currently unavailable":
+4. "Choose what the power buttons do" :material-arrow-right: "Change settings that are currently unavailable":
     - in "Shutdown settings":
         - disable: "Turn on fast startup"
         - disable: "Sleep"
 
 ### File explorer, start menu, taskbar
-1. system -> for developers -> file explorer:
+1. System :material-arrow-right: for developers :material-arrow-right: file explorer:
     - enable: show file extensions
     - enable: show hidden and system files
     - enable: show file extensions
     - enable: show full path in title bar
     - enable: show empty drives
-2. open file explorer -> ellipsis icon -> options -> option file explorer to: "This PC"
-3. disable all desktop icons
-4. start menu:
+2. Open file explorer :material-arrow-right: ellipsis icon :material-arrow-right: options :material-arrow-right: option file explorer to: "This PC"
+3. Disable all desktop icons
+4. Start menu:
     - layout: more pins
     - disable: show recently opened items in Start
     - disable: show recommendations for tips
-5. taskbar:
+5. Taskbar:
     - disable: search, copilot, task view, widgets
     - taskbar behaviors: enable: automatically hide the taskbar
     - unpin all apps from taskbar
 ### Misc
-1. mouse properties -> disable: enhanced pointer precision
-2. disable: sticky keys keyboard shortcut
-3. notifications: do not disturb
+1. Mouse properties :material-arrow-right: disable: enhanced pointer precision
+2. Disable: sticky keys keyboard shortcut
+3. Notifications: do not disturb
 ### Personalization
-1. change to dark mode
-2. set accent color: automatic
-3. set mouse pointer color: black
-4. change wallpaper from `C:\Users\<user>\Pictures\wallpapers`
+1. Change to dark mode
+2. Set accent color: automatic
+3. Set mouse pointer color: black
+4. Change wallpaper from `C:\Users\<user>\Pictures\wallpapers`
 
 
 ## Setup microphone
-1. plug in
-2. in `Control Panel\Hardware and Sound`:
+1. Plug in
+2. In `Control Panel\Hardware and Sound`:
     - disable: unused inputs and outputs
     - set mic as default device and default communication device
     - set mic level to 100
 
 ## Setup bluetooth headphones
-1. enable bluetooth, pair headphones
-2. in `Control Panel\Hardware and Sound`:
+1. Enable bluetooth, pair headphones
+2. In `Control Panel\Hardware and Sound`:
     - set Speakers as default device and default communication device
     - if changed since pairing, again: set mic as default device and default communication device
 ### Permanently disable handsfree telephony
-1. run `services.msc`
-2. locate `Bluetooth Audio Gateway Service`
-3. right click -> Properties -> General
+1. Run `services.msc`
+2. Locate `Bluetooth Audio Gateway Service`
+3. Right click :material-arrow-right: Properties :material-arrow-right: General
     - click "Stop"
     - set Startup type: disabled
 ### Temporarily disable handsfree telephony
-1. open Control Panel, then paste into address bar:
+1. Open Control Panel, then paste into address bar:
 ```
 Control Panel\Hardware and Sound\Devices and Printers
 ```
-2. right click device -> properties -> services -> disable "Handsfree Telephony"
+2. Right click device :material-arrow-right: properties :material-arrow-right: services :material-arrow-right: disable "Handsfree Telephony"
 
 ## Applications
 1. NVIDIA app
@@ -135,5 +135,5 @@ Control Panel\Hardware and Sound\Devices and Printers
 	- disable: show announcements about new releases
 	- disable: startup on login
 	- enable: close button should minimize the spotify window
-4. Task Manager -> startup apps -> disable: any unneeded
+4. Task Manager :material-arrow-right: startup apps :material-arrow-right: disable: any unneeded
 

@@ -1,7 +1,7 @@
 # Dual-boot Windows and Ubuntu
 This is a guide for installing Ubuntu on a separate drive from Windows with each OS having their own EFI partition. It assumes Windows 11 is already installed.
 
-Despite choosing a drive to install Ubuntu (and other distros) on, the installer may write EFI data to another drive, such as the drive where Windows is installed. This is bad because Windows is known to overwrite any boot information that isn't Windows, making booting into Linux impossible. To avoid this, we do a few things to make sure that Ubuntu gets its own EFI partition on its own disk, separate from the Windows EFI partition.
+Despite choosing a drive to install Ubuntu (and other distros) on, the installer may write EFI data to another drive, such as the drive where Windows is installed. This is problematic because Windows is known to overwrite any boot information that isn't Windows, making booting into Linux impossible. To avoid this, we do a few things to make sure that Ubuntu gets its own EFI partition on its own disk, separate from the Windows EFI partition.
 
 ## Preliminary steps
 ### UEFI settings
@@ -13,7 +13,7 @@ Make sure that these features are disabled:
 ### Windows settings
 Windows has a feature called "fast startup" which can cause issues with other operating systems present. To disable this:
 
-In Power Options -> "Choose what the power buttons do" -> "Change settings that are currently unavailable"
+In Power Options :material-arrow-right: "Choose what the power buttons do" :material-arrow-right: "Change settings that are currently unavailable"
 
 - "Turn on Fast startup": disabled
 
@@ -115,7 +115,7 @@ Step 18: Restart. In your UEFI boot order, set Windows to be first priority and 
 Step 19: Login to either OS by using the UEFI boot menu and making a selection
 
 ## Enabling GRUB (recommended)
-It's a good idea to have a bootloader. In the event of a broken install, you can easily access a recovery partition already on your disk via GRUB without needing to create another live ISO.
+It's a good idea to have a bootloader. In the event of a broken install, you can easily access a live recovery partition already on your disk (if your distro does this, it appears that Ubuntu doesn't) via GRUB without needing to create another live ISO.
 
 Step 1: While logged in as root, edit this file
 ```
