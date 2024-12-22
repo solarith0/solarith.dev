@@ -75,6 +75,7 @@ How I like to setup my Windows environment
     - disable: search, copilot, task view, widgets
     - taskbar behaviors: enable: automatically hide the taskbar
     - unpin all apps from taskbar
+    - system :material-arrow-right: for developers :material-arrow-right: End Task (enable end task in taskbar by right click): enabled
 ### Misc
 1. Mouse properties :material-arrow-right: disable: enhanced pointer precision
 2. Disable: sticky keys keyboard shortcut
