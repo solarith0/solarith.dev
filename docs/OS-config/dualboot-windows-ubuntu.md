@@ -3,6 +3,9 @@ This is a guide for installing Ubuntu on a separate drive from Windows with each
 
 Despite choosing a drive to install Ubuntu (and other distros) on, the installer may write EFI data to another drive, such as the drive where Windows is installed. This is problematic because Windows is known to overwrite any boot information that isn't Windows, making booting into Linux impossible. To avoid this, we do a few things to make sure that Ubuntu gets its own EFI partition on its own disk, separate from the Windows EFI partition.
 
+## Credit
+Adapted from KMDTech's excellent [video guide](https://youtu.be/KX85vZ3ANVk?si=LgnHuwgjv6mnfiCW)
+
 ## Preliminary steps
 ### UEFI settings
 Make sure that these features are disabled:
@@ -150,6 +153,3 @@ ls -la
 Step 7: In your UEFI boot order, set Windows to be first priority and Ubuntu to be second (or whichever you prefer)
 
 Step 8: Login to either OS by using the UEFI boot menu and making a selection
-
-## Credit
-Separate EFI info adapted from KMDTech's excellent [video guide](https://youtu.be/KX85vZ3ANVk?si=LgnHuwgjv6mnfiCW)
